@@ -1,0 +1,151 @@
+* {
+    font-family: ui-sans-serif,system-ui,"Segoe UI",'Roboto',"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";;
+}
+
+body {
+  margin: 0;
+  padding: 8% 20%;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  body {
+      padding: 8% 16%;
+    
+  }
+}
+
+
+
+.startSection {
+  border:black solid;
+  padding:30px;
+  margin-bottom:10px;
+}
+
+
+
+
+
+.startSection img {
+float:left; 
+display:flex;
+  width: 150px;
+  height: 150px;
+  border-radius: 80%;
+margin: 0 30px;
+
+}
+@media only screen and (max-width: 1100px) {
+    .startSection {
+          padding: 8% 4%;
+           
+      }
+    }
+
+
+.row{
+    display: flex;
+    
+    }
+
+.column{
+    align-self: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .row {
+         flex-direction: column;
+           
+      }
+    }
+
+
+.projectSection{
+
+    border:black solid;
+  padding:10px 25px ;
+}
+/* .projectSection span {
+    display: flex;
+    flex-direction: column;
+} */
+@media only screen and (max-width: 600px) {
+.projectSection {
+      padding: 8% 4%;
+    
+  }
+}
+
+
+
+
+.projectCards{
+display:flex;
+  text-align: center;
+  overflow-x:auto; 
+padding: 20px 30px;
+align-items: center;
+align-self: center;
+align-content:center;
+justify-content:space-between;
+margin: 0 12px;
+}
+.projectCards a {
+margin: 0 10px;
+}
+
+.projectCardAligner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.projectCard{
+    display: flex;
+    
+    flex-direction: column;
+border:black solid;
+  margin:0 40px;
+  padding:5px 10px;
+  min-width: 190px;}
+.projectCard h1 {
+    font-size: 24px;
+}.projectCard p  {
+max-width: 211px;
+}
+.projectCard img {
+
+    width: 160px;
+    height: 120px;
+    align-self:center;
+    
+}
+
+.endIconBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+.leftIcons{
+    float: left;
+    border-bottom: black solid 0.5px;
+    
+
+}
+.leftIcons img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.rightIcons{
+    float: right;
+}.rightIcons img{
+    width: 20px;
+    height: 20px;
+}
