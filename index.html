@@ -7,197 +7,339 @@ Online HTML, CSS and JavaScript editor to run code online.
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rasa&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
-  <script src="myscripts.js"></script>   
   <title>Browser</title>
 </head>
 
 <body>
   <div class='startSection'>
     <div class='row'>
-    <div class='column'>
-         <img src="https://media.licdn.com/dms/image/C4D03AQEBJlgYXKNZQA/profile-displayphoto-shrink_800_800/0/1645980997002?e=2147483647&v=beta&t=8A5iqgsmCL0LFwrhT1vXaDGBTFon_eJHf8x6qyUVghk" alt="my pp" />
+      <div class='column'>
+        <img
+          src="https://media.licdn.com/dms/image/C4D03AQEBJlgYXKNZQA/profile-displayphoto-shrink_800_800/0/1645980997002?e=2147483647&v=beta&t=8A5iqgsmCL0LFwrhT1vXaDGBTFon_eJHf8x6qyUVghk"
+          alt="my pp" />
       </div>
-      
-          <div class='column'>
-<h2>Merhaba ben Mehmet Nail Mutlu</h2>
-      <h3>Istanbulda bir yazilimciyim.</h4>
-      <p>Liseden yeni mezun oldum, islerinizi kolaylastiracak web uygulamalari ve mobil uygulamalar tasarlayabilirim.</p>
+
+      <div class='column'>
+        <h2>Merhaba ben Mehmet Nail Mutlu</h2>
+        <h3>Istanbulda bir yazilimciyim.</h4>
+          <p>Liseden yeni mezun oldum, islerinizi kolaylastiracak web uygulamalari ve mobil uygulamalar
+            tasarlayabilirim.</p>
       </div>
     </div>
   </div>
 
-    <div class='projectSection'>
-        <h2>
+  <div class='projectSection'>
+    <h2>
       Iste yaptigim projelerden bazilari
-        </h5>
-        <div class="projectCardAligner">
-            <div onclick="goLeft()" class="goLeftArrow"><</div> 
-
-     
-
+    </h2>
+    <div class="projectCardAligner">
+      <div id="goLeftArrow">sol</div>
       <div class='projectCards'>
+        <div class='projectCard '>
+          <h1>Portfolio</h1>
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/victim-portfolio-website-template.jpg"
+            alt="portfolio">
+          <p>Web app, uses:
+            html, css, javascript
+            localstorage processing, React hook management,</p>
+          <div class="endIconBar">
+
+            <div class="leftIcons">
+              <img class='gitIcon' src="./images/github-logo.png"></img>
+              <img class="viewIcon" src="./images/visibility-button.png"></img>
+
+            </div>
+            <div class="rightIcons">
+              <img class='jsIcon' src="./images/java-script.png"></img>
+              <img class='htmlIcon' src="./images/html(1).png"></img>
+              <img class='cssIcon' src="./images/css-3(1).png"></img>
+              <img class='reactIcon' src='./images/atom.png'></img>
+
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class='projectCard '>
+          <h1>Portfolio</h1>
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/victim-portfolio-website-template.jpg"
+            alt="portfolio">
+          <p>Web app, uses:
+            html, css, javascript
+            localstorage processing, React hook management,</p>
+          <div class="endIconBar">
+
+            <div class="leftIcons">
+              <img class='gitIcon' src="./images/github-logo.png"></img>
+              <img class="viewIcon" src="./images/visibility-button.png"></img>
+
+            </div>
+            <div class="rightIcons">
+              <img class='jsIcon' src="./images/java-script.png"></img>
+              <img class='htmlIcon' src="./images/html(1).png"></img>
+              <img class='cssIcon' src="./images/css-3(1).png"></img>
+              <img class='reactIcon' src='./images/atom.png'></img>
+
+            </div>
+          </div>
+
+
+
+        </div>
         <div class='projectCard'>
-            <h1>Portfolio</h1>
-            <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/victim-portfolio-website-template.jpg" alt="portfolio">
-            <p>Web app, uses:
-                html, css, javascript
-                localstorage processing, React hook management,</p>
+          <h1>Portfolio</h1>
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/victim-portfolio-website-template.jpg"
+            alt="portfolio">
+          <p>Web app, uses:
+            html, css, javascript
+            localstorage processing, React hook management,</p>
           <div class="endIconBar">
 
             <div class="leftIcons">
-                <img class='gitIcon' src="./images/github-logo.png"></img>
-                <img class="viewIcon" src="./images/visibility-button.png"></img>
-    
-              </div>
-              <div class="rightIcons">
-                <img class='jsIcon' src="./images/java-script.png"></img>
-                <img class='htmlIcon' src="./images/html(1).png"></img>
-                <img class='cssIcon' src="./images/css-3(1).png"></img>
-                <img class='reactIcon' src='./images/atom.png'></img>
-    
-              </div>
+              <img class='gitIcon' src="./images/github-logo.png"></img>
+              <img class="viewIcon" src="./images/visibility-button.png"></img>
+
             </div>
-          
+            <div class="rightIcons">
+              <img class='jsIcon' src="./images/java-script.png"></img>
+              <img class='htmlIcon' src="./images/html(1).png"></img>
+              <img class='cssIcon' src="./images/css-3(1).png"></img>
+              <img class='reactIcon' src='./images/atom.png'></img>
 
-
+            </div>
           </div>
-          <div class='projectCard'>
-            <h1>Portfolio</h1>
-            <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/victim-portfolio-website-template.jpg" alt="portfolio">
-            <p>Web app, uses:
-                html, css, javascript
-                localstorage processing, React hook management,</p>
+
+
+
+        </div>
+        <div class='projectCard'>
+          <h1>Portfolio</h1>
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/victim-portfolio-website-template.jpg"
+            alt="portfolio">
+          <p>Web app, uses:
+            html, css, javascript
+            localstorage processing, React hook management,</p>
           <div class="endIconBar">
 
             <div class="leftIcons">
-                <img class='gitIcon' src="./images/github-logo.png"></img>
-                <img class="viewIcon" src="./images/visibility-button.png"></img>
-    
-              </div>
-              <div class="rightIcons">
-                <img class='jsIcon' src="./images/java-script.png"></img>
-                <img class='htmlIcon' src="./images/html(1).png"></img>
-                <img class='cssIcon' src="./images/css-3(1).png"></img>
-                <img class='reactIcon' src='./images/atom.png'></img>
-    
-              </div>
+              <img class='gitIcon' src="./images/github-logo.png"></img>
+              <img class="viewIcon" src="./images/visibility-button.png"></img>
+
             </div>
-          
+            <div class="rightIcons">
+              <img class='jsIcon' src="./images/java-script.png"></img>
+              <img class='htmlIcon' src="./images/html(1).png"></img>
+              <img class='cssIcon' src="./images/css-3(1).png"></img>
+              <img class='reactIcon' src='./images/atom.png'></img>
 
-
+            </div>
           </div>
-          <div class='projectCard'>
-            <h1>Portfolio</h1>
-            <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/victim-portfolio-website-template.jpg" alt="portfolio">
-            <p>Web app, uses:
-                html, css, javascript
-                localstorage processing, React hook management,</p>
+
+
+
+        </div>
+        <div class='projectCard'>
+          <h1>Portfolio</h1>
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/victim-portfolio-website-template.jpg"
+            alt="portfolio">
+          <p>Web app, uses:
+            html, css, javascript
+            localstorage processing, React hook management,</p>
           <div class="endIconBar">
 
             <div class="leftIcons">
-                <img class='gitIcon' src="./images/github-logo.png"></img>
-                <img class="viewIcon" src="./images/visibility-button.png"></img>
-    
-              </div>
-              <div class="rightIcons">
-                <img class='jsIcon' src="./images/java-script.png"></img>
-                <img class='htmlIcon' src="./images/html(1).png"></img>
-                <img class='cssIcon' src="./images/css-3(1).png"></img>
-                <img class='reactIcon' src='./images/atom.png'></img>
-    
-              </div>
+              <img class='gitIcon' src="./images/github-logo.png"></img>
+              <img class="viewIcon" src="./images/visibility-button.png"></img>
+
             </div>
-          
+            <div class="rightIcons">
+              <img class='jsIcon' src="./images/java-script.png"></img>
+              <img class='htmlIcon' src="./images/html(1).png"></img>
+              <img class='cssIcon' src="./images/css-3(1).png"></img>
+              <img class='reactIcon' src='./images/atom.png'></img>
 
-
+            </div>
           </div>
-          <!-- <div class='projectCard'>
-            <h1>Portfolio</h1>
-            <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/victim-portfolio-website-template.jpg" alt="portfolio">
-            <p>Web app, uses:
-                html, css, javascript
-                localstorage processing, React hook management,</p>
+
+
+
+        </div>
+        <div class='projectCard'>
+          <h1>Portfolio</h1>
+          <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/victim-portfolio-website-template.jpg"
+            alt="portfolio">
+          <p>Web app, uses:
+            html, css, javascript
+            localstorage processing, React hook management,</p>
           <div class="endIconBar">
 
             <div class="leftIcons">
-                <img class='gitIcon' src="./images/github-logo.png"></img>
-                <img class="viewIcon" src="./images/visibility-button.png"></img>
-    
-              </div>
-              <div class="rightIcons">
-                <img class='jsIcon' src="./images/java-script.png"></img>
-                <img class='htmlIcon' src="./images/html(1).png"></img>
-                <img class='cssIcon' src="./images/css-3(1).png"></img>
-                <img class='reactIcon' src='./images/atom.png'></img>
-    
-              </div>
+              <img class='gitIcon' src="./images/github-logo.png"></img>
+              <img class="viewIcon" src="./images/visibility-button.png"></img>
+
             </div>
-          
+            <div class="rightIcons">
+              <img class='jsIcon' src="./images/java-script.png"></img>
+              <img class='htmlIcon' src="./images/html(1).png"></img>
+              <img class='cssIcon' src="./images/css-3(1).png"></img>
+              <img class='reactIcon' src='./images/atom.png'></img>
 
-
+            </div>
           </div>
-          <div class='projectCard'>
-            <h1>Portfolio</h1>
-            <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/victim-portfolio-website-template.jpg" alt="portfolio">
-            <p>Web app, uses:
-                html, css, javascript
-                localstorage processing, React hook management,</p>
-          <div class="endIconBar">
-
-            <div class="leftIcons">
-                <img class='gitIcon' src="./images/github-logo.png"></img>
-                <img class="viewIcon" src="./images/visibility-button.png"></img>
-    
-              </div>
-              <div class="rightIcons">
-                <img class='jsIcon' src="./images/java-script.png"></img>
-                <img class='htmlIcon' src="./images/html(1).png"></img>
-                <img class='cssIcon' src="./images/css-3(1).png"></img>
-                <img class='reactIcon' src='./images/atom.png'></img>
-    
-              </div>
-            </div>
-          
 
 
-          </div>
-          <div class='projectCard'>
-            <h1>Portfolio</h1>
-            <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/victim-portfolio-website-template.jpg" alt="portfolio">
-            <p>Web app, uses:
-                html, css, javascript
-                localstorage processing, React hook management,</p>
-          <div class="endIconBar">
 
-            <div class="leftIcons">
-                <img class='gitIcon' src="./images/github-logo.png"></img>
-                <img class="viewIcon" src="./images/visibility-button.png"></img>
-    
-              </div>
-              <div class="rightIcons">
-                <img class='jsIcon' src="./images/java-script.png"></img>
-                <img class='htmlIcon' src="./images/html(1).png"></img>
-                <img class='cssIcon' src="./images/css-3(1).png"></img>
-                <img class='reactIcon' src='./images/atom.png'></img>
-    
-              </div>
-            </div>
-          
-
-
-          </div>
-              -->
-   
-            </div>
-            <div onclick="goRight()" class="goRightArrow">></div> 
         </div>
 
-  
+      </div>
+      <div id="goRightArrow">sag</div>
+    </div>
+
   </div>
+
+
+
+  <div class="containerTechnologiesAndCV">
+    <div class="technologiesSection">
+      <h2>Kullandigim teknolojiler</h2>
+      <div class="technologiesSectionContent">
+
+        <div class="imagesTechnologies">
+
+          <img src="./images/java-script.png" alt="js" />
+          <img src="./images/css-3(1).png" alt="css" />
+          <img src="./images/html(1).png" alt="html" />
+          <img src="./images/atom.png" alt="react" />
+
+        </div>
+
+        <div class="technologyNames">
+          <li>
+            <ul>Javascript</ul>
+            <ul>HTML</ul>
+            <ul>CSS</ul>
+            <ul>ReactJS</ul>
+            <ul>NextJS</ul>
+            <ul>SEO</ul>
+            <ul>Docker</ul>
+            <ul>Ubuntu Server (Apache 2)</ul>
+            <ul>Github</ul>
+            <ul>Python</ul>
+            <ul>Linux</ul>
+            <ul>Python</ul>
+          </li>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="cvSocialHobbyContainer">
+      <div class="cvAndSocialSectionContainter">
+        <div class="myCVSection">
+          <h2>CV</h2>
+          <button>click to view</button>
+        </div>
+        <div class="mySocialMediasSection">
+          <div class="mySocialMedias_title">
+    
+            <h2>Sosyal Medyada Ben</h2>
+    
+          </div>
+          <div class="mySocialMedias_icons">
+    
+            <img src="./images/youtube(2).png" alt="youtubeSocialIcon">
+            <img src="./images/whatsapp(1).png" alt="whatsappSocialIcon">
+            <img src="./images/instagram(1).png" alt="instagramSocialIcon">
+    
+          </div>
+        </div>
+  
+      </div>
+      
+      <div class="myHobbiesSection">
+        <div class="myHobbiesSection_title">
+          <h2>Hobilerim</h2>
+  
+        </div>
+        <div class="myHobbiesSection_images">
+          <div class="guitarSection">
+            <div class="guitarSectionTop">
+              <img src="./images/guitar-instrument(1).png" alt="guitarIcon">
+              <p>Kendi başıma öğrendiğimenstrüman olan klasik gitarda başlangıç ve orta seviye klasik parçaları çalabilir
+                hale geldim.</p>
+              <p>Kendimi daha çok geliştirmek için halen çabalıyorum.</p>
+              <p>Birkaç kaydımı buradan dinleyebilirsiniz:</p>
+          
+
+            </div>
+
+            <div class="guitarSectionBottom">
+              <img src="./images/youtube(2).png" alt="youtubeIconInMyHobbies">
+
+
+            </div>
+          </div>
+          <div class="photographerSection">
+            
+            <div class="photographerSectionTop">
+              <img src="./images/photographer-camera.png" alt="photographerIcon">
+              <p>Body : Canon EOS R
+                Lensler : Canon 24-105 RF
+                Drone : DJI Mavic 2 Pro</p>
+    
+              <p>Bir süredir amatör fotoğraf ve video çekiyorum. </p>
+              <p>Yaptığım işleri buradan inceleyebilirsiniz:</p>
+              
+
+            </div>
+            
+                        <div class="photographerSectionBottom">
+            <img src="./images/instagram(1).png" alt="instagrammerIcon">
+
+</div>
+            
+            
+          </div>
+          <div class="youtuberSection">
+            <div class="youtuberSectionTop">
+              <img src="./images/youtube(2).png" alt='youtubeIcon'>
+              <p>Üniversite sınavına hazırlanırken çalışma düzenimi vlog olarak bir süre kaydetmiştim. </p>
+           <p>Ayrıca kariyerimin ilerleyen aşamalarında sosyal medyada aktif olmaya önem göstereceğim.</p>
+          <p>Beni buradan takip edebilirsiniz:</p>  
+       
+            </div>
+            <div class="youtuberSectionBottom">
+              <img src="./images/youtube(2).png" alt="youtubeIconSocial">
+
+            </div>
+
+
+        </div>
   
   
-  <script src="script.js"></script>
+  
+        </div>
+  
+      </div>
+
+    </div>
+
+    
+  </div>
+
+
+
+
+  <script src="myscripts.js"></script>
+
+
 </body>
 
 </html>
