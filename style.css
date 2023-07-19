@@ -156,7 +156,7 @@ font-size: small;
     margin: 0 26px;
     padding: 5px 10px;
     scroll-snap-align: start;
-    min-width: 230px;
+    min-width: 225px;
     height: 480px;
 }
 .projectCard p:nth-child(1){
