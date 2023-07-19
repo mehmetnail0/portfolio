@@ -1,15 +1,23 @@
+@font-face {
+    font-family: Inter;
+    src: url(./Fon/Inter-VariableFont_slnt\,wght.ttf);
+}
 * {
-    font-family: ui-sans-serif, system-ui, "Segoe UI", 'Roboto', "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    ;
+       font-family: "Inter", 'sans-serif';
 }
 
 body {
     margin: 0;
     padding: 8% 15%;
+
 }
 
 .green {
     color: #547878
+}
+
+a {
+    text-decoration: none;
 }
 hr {
     border-top: 1px solid rgb(61, 58, 58);
@@ -103,8 +111,8 @@ hr {
     display: flex;
     text-align: center;
     overflow-x: hidden;
-
-
+height: 100%;
+font-size: small;
     scroll-behavior: smooth;
     scroll-snap-type: both;
     padding: 20px 30px;
@@ -121,6 +129,7 @@ hr {
         width: calc(70vw);
 
     }
+    
 
 }
 
@@ -142,13 +151,19 @@ hr {
 .projectCard {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     border: black solid;
     margin: 0 26px;
     padding: 5px 10px;
     scroll-snap-align: start;
-    min-width: 153px;
+    min-width: 230px;
+    height: 480px;
 }
-
+.projectCard p:nth-child(1){
+background-color: #547878;
+}
+.startBar{
+}
 
 
 .projectCard h1 {
@@ -156,7 +171,9 @@ hr {
 }
 
 .projectCard p {
-    max-width: 211px;
+    max-width: 80%;
+
+align-self: center;    text-align: center;
 }
 
 .projectCard img {
@@ -170,25 +187,36 @@ hr {
 .endIconBar {
     display: flex;
     justify-content: space-between;
-    padding: 0 8px;
+    padding: 0 5px;
 }
 
 .leftIcons {
     float: left;
-    border-bottom: black solid 0.5px;
 
 
 }
 
 .leftIcons img {
+    padding:  8px;
     width: 20px;
+    align-items: center;
     height: 20px;
 }
 
 
+.leftIcons img:hover {
+    background-color: rgb(162, 162, 162);
+    transition: 0.3s;
+    border-radius: 20px;
+    padding: 8px ;
+}
+
 
 .rightIcons {
     float: right;
+    align-items: center;
+    align-self: center;
+    align-content: center;
 }
 
 .rightIcons img {
@@ -201,7 +229,7 @@ hr {
 #goLeftArrow {
     display: flex;
     background-color: rgb(172, 172, 172);
-    border-radius: 100%;
+    border-radius: 2em;
     color: white;
     padding: 20px;
     justify-content: center;
@@ -209,7 +237,7 @@ hr {
     align-items: center;
     align-content: center;
     align-self: center;
-    transition: 1s;
+    transition: 0.2s;
 }
 
 #goLeftArrow:hover,
@@ -248,10 +276,28 @@ hr {
     flex-direction: column;
     border: black solid;
     float: left;
-    min-width: 25%;
+    min-width: 15%;
     padding: 20px;
     font-size: 14px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .technologiesSection h2 {}
@@ -348,16 +394,17 @@ hr {
     text-align: center;
 }
 
-.myCVSection button {
+.myCVSection a {
     padding: 8px;
     border: none;
     background-color: black;
     color: white;
+    text-decoration: none;
     border-radius: 20px 20px 20px 20px;
-    transition: 1s;
+    transition: 0.2s;
 }
 
-.myCVSection button:hover {
+.myCVSection a:hover {
     background-color: rgb(136, 136, 136);
     cursor: pointer;
 }
@@ -442,6 +489,18 @@ hr {
     }
 }
 
+.myHobbiesSection_images a{
+    text-decoration: none;
+    padding: 6px;
+
+}
+.myHobbiesSection_images a:hover{
+color: white;
+background-color: rgb(0, 26, 46);
+border-radius: 20px;
+padding: 6px;
+transition: 0.2s;
+}
 
 
 .myHobbiesSection_images p {}
@@ -515,13 +574,35 @@ hr {
 
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 800px) {
 
 
     .imagesTechnologies {
         display: flex;
         flex-direction: column;
+        flex-flow: row wrap;
         justify-content: space-evenly;
     }   
     
 }
+
+@media only screen and (max-width: 1600px) {
+
+
+    .imagesTechnologies {
+        flex-flow: column;
+    }   
+    
+}
+
+
+.technologyItem{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
