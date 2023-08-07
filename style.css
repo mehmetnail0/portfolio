@@ -137,7 +137,7 @@ hr {
         flex-direction: row;
 }
 .projectCard span > * {
-padding: 8px;
+padding: 5px;
    border-radius: 4px;
    margin: 0 12px;
 
@@ -148,7 +148,7 @@ padding: 8px;
 background-color: aliceblue;
 color: black;
 cursor: pointer;
-padding: 8px;
+padding: 5px;
     
  }
 
